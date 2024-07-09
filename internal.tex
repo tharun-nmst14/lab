@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\begin{document}
+	\section{ Question 1}
+	Reproduce the following sections in LaTeX:
+	\\
+	LaTeX is a high-quality typesetting system; it includes features designed for the production of technical
+	and scientific documentation. LaTeX is widely used in academia for the communication and publication
+	of scientific documents in many fields, including mathematics, computer science, engineering, physics,
+	chemistry, economics, and political science.
+	\subsection{\textbf{Coloured text}}
+	\textbf{\textcolor{blue}{Introduction}}
+	\\
+	\textcolor{blue}{This is the introduction section, highlighted in blue.}
+	\\
+		\textbf{\textcolor{red}{Methadology}}
+		\\
+	\textcolor{red}	{This section discusses the methodology, highlighted in red.}
+	\\
+		\textbf{\textcolor{red}{Methadology}}
+	\\
+	\textcolor{green}	{This section discusses the methodology, highlighted in green.}
+	
+	
+	\subsection{Special Characters}
+	LaTeX allows you to include special characters such as:
+	\\
+	Dollar sign:$\$$
+	\\
+	Ampersand:$\&$
+	\\
+	Percent:$\%$
+	\\
+	Hash:$\#$
+	\\
+	\subsection{Including Figures}
+	To include figures, you first need to upload the image file named sample-image.jpg from your com-puter using the upload link in the file-tree menu. Then use the includegraphics command to include	it in your document.
+	\subsection{Creating Tables}
+	
+	Use the table and tabular environments for basic tables. Here’s an example:
+
+
+\newpage
+%	\begin{figure}
+%		\includegraphics[width=220px\textheight]{/home/user/1.jpg}
+%	\end{figure}
+%	\begin{table}[h]
+	
+	\begin{tabular}{c|c|c}
+		\textbf{Items}&\textbf{Quantity}&\textbf{Price}\\
+		\hline
+		Apples&10&$\$$1.50\\
+		\hline
+		Oranges&5&$\$$2.00\\
+	\end{tabular}
+	
+	%\caption{An example table with 3 columns.}
+	
+%\end{table}
+
+\subsection{Mathematical Expressions}
+LaTeX excels at typesetting mathematics. Here is the quadratic formula inline: $ ax^2 + bx + c = 0. $
+\\
+
+\begin{math}
+x=\frac{-b+\sqrt{b^2-4ac}}{2a}
+\end{math}
+\\
+Sine and Cosine Addition Formulas
+\begin{equation}
+sin(a + b) = sin a cos b + cos a sin b
+\end{equation}
+\begin{equation}
+\end{equation}
+Displayed version:
+\\
+\centering
+\begin{math}
+\int_{a}^{b}f(x)dx
+\end{math}
+Binomial Theorem
+\\
+\begin{math}
+(a+b)^n=\sum_{n}^{k=0}(nc)a^n-kb^k
+\end{math}
+
+
+
+\subsection{Lists}
+You can make lists with automatic numbering:
+
+
+\begin{enumerate}
+	\item First item,
+	\item Second item,
+	\item Third item
+\end{enumerate}
+You can also use bullet points with colored text:
+\begin{itemize}
+	
+	\item \textcolor{pink}{This text is magenta.}
+	\item \textcolor{yellow}{This text is yellow.}
+	\item \textcolor{gray}{This text is black.}
+	\item This text is gray.
+	\item \textcolor{white}{This text is white}
+\end{itemize}
+\subsection{Hyperlinks}
+For more information, visit the\textcolor{blue}{LaTeX project website.}
+\subsection{Bibliography}
+To include references, you can use BibTeX. Here is an example citation [Doe24].
+\\
+\textbf{References}
+[Doe24] John Doe. An example article. Journal of Examples, 1(1):1–2, 2024.
+
+	
+	
+
+	
+	
+\end{document}
