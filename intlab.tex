@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\begin{document}
+	
+	\section{LaTeX}
+	
+	LaTeX is a high-quality typesetting system; it includes features designed for the production of technical
+	and scientific documentation. LaTeX is widely used in academia for the communication and publication
+	of scientific documents in many fields, including mathematics, computer science, engineering, physics,
+	chemistry, economics, and political science.
+	
+	\subsection{Coloured Text}
+	
+	\subsubsection*{Introduction}
+	
+	\textcolor{blue}{This is the introduction section, highlighted in blue.}
+	
+	\subsubsection*{Methodology}
+	
+	\textcolor{red}{This section discusses the methodology, highlighted in red.}
+	
+	\subsubsection*{Results}
+	
+	\textcolor{green}{This section presents the results, highlighted in green.}
+	
+	\subsection{Special Characters}
+	
+	LaTeX allows you to include special characters such as:
+	\begin{itemize}
+		\item Dollar sign: \$
+		\item Ampersand: \&
+		\item Percent: \%
+		\item Hash: \#
+	\end{itemize}
+	
+	\subsection{Including Figures}
+	
+	To include figures, you first need to upload the image file named \texttt{sample-image.jpg} from your computer using the upload link in the file-tree menu. Then use the \texttt{includegraphics} command to include it in your document.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{mypic.jpg}
+		\caption{This is a sample image.}
+	\end{figure}
+	
+	\subsection{Creating Tables}
+	
+	Use the \texttt{table} and \texttt{tabular} environments for basic tables. Here’s an example:
+	
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Quantity & Item    & Price  \\
+			\hline
+			10       & Apples  & \$1.50 \\
+			5        & Oranges & \$2.00 \\
+			\hline
+		\end{tabular}
+		\caption{An example table with 3 columns.}
+	\end{table}
+	
+	\subsection{Mathematical Expressions}
+	
+	LaTeX excels at typesetting mathematics. Here is the quadratic formula inline: \(ax^2 + bx + c = 0\).
+	
+	Displayed version:
+	\[
+	x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+	\]
+	
+	Sine and Cosine Addition Formulas
+	\begin{align}
+	\sin(a + b) &= \sin a \cos b + \cos a \sin b \tag{1} \\
+	\cos(a + b) &= \cos a \cos b - \sin a \sin b \tag{2}
+	\end{align}
+	
+	Displayed version:
+	\[
+	\int_{a}^{b} f(x) \, dx
+	\]
+	
+	Binomial Theorem
+	\[
+	(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k
+	\]
+	
+	\subsection{Lists}
+	
+	You can make lists with automatic numbering:
+	\begin{enumerate}
+		\item First item,
+		\item Second item,
+		\item Third item.
+	\end{enumerate}
+	
+	You can also use bullet points with colored text:
+	\begin{itemize}
+		\item \textcolor{magenta}{This text is magenta.}
+		\item \textcolor{yellow}{This text is yellow.}
+		\item \textcolor{black}{This text is black.}
+		\item \textcolor{gray}{This text is gray.}
+		\item \textcolor{white}{This text is white.}
+	\end{itemize}
+	
+	\subsection{Hyperlinks}
+	
+	For more information, visit the \href{https://www.google.com}{LaTeX project website}.
+	
+	\subsection{Bibliography}
+	
+	To include references, you can use BibTeX. Here is an example citation \cite{Doe24}.
+	
+	\bibliographystyle{plain}
+	\begin{thebibliography}{9}
+		\bibitem{Doe24} John Doe. \textit{An example article}. Journal of Examples, 1(1):1–2, 2024.
+	\end{thebibliography}
+	
+\end{document}
