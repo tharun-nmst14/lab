@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\begin{document}
+\textcolor{blue}{\tableofcontents}
+ \section*{Content}
+
+\subsection{Document Structure}
+
+LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is widely used in academia for the communication and publication of scientific documents in many fields, including mathematics, computer science, engineering, physics, chemistry, economics, and political science.
+
+\subsubsection{Font Styles}
+Here are some examples of different font styles in LaTeX: \\
+\textbf{Bold text}
+
+\textit{Italic text}
+
+\underline{Underlined text}
+
+\textasciitilde{} - Tilde
+
+\textasciicircum{} - Caret
+
+\textbackslash{} - Backslash
+
+\subsubsection{Special Characters}
+LaTeX allows you to include special characters such as:
+\begin{itemize}
+    \item Hash: \#
+    \item \$ -Dollar sign 
+    \item \% -Percent sign
+    \item \& -Ampersand
+    \item \_ Underscore
+    \item  \{ -Left curly brace
+    \item \} -Right curly brace
+\end{itemize}
+
+\subsubsection{Including Figures}
+To include figures, you first need to upload the image file named \texttt{sample-image.jpg} from your computer using the upload link in the file-tree menu. Then use the \texttt{includegraphics} command to include it in your document.
+
+
+
+\subsubsection{Creating Tables}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Country & Primary Education & Secondary Education & Higher Education \\
+        \hline
+        USA & Grades 1-5 & Grades 6-12 & College/University \\
+        \hline
+        UK & Years 1-6 & Years 7-13 & College/University \\
+        \hline
+        India & Grades 1-5 & Grades 6-12 & College/University \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Basic Education Systems}
+\end{table}
+
+\subsubsection{Mathematical Expressions}
+LaTeX excels at typesetting mathematics. Here is the quadratic formula inline: \(ax^2 + bx + c = 0\).
+
+Displayed version:
+\[
+\left( \begin{array}{cc}
+a & c \\
+b & e \\
+d & g \\
+f & h \\
+\end{array} \right)
+\left( \begin{array}{c}
+ae + bg \\
+ce + dg \\
+af + bh \\
+cf + dh \\
+\end{array} \right)
+\]
+
+Definite Integral:
+\[
+\int_0^1 x^2 \, dx = \left[ \frac{x^3}{3} \right]_0^1 = \frac{1}{3}
+\]
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{rgukt.jpeg}
+	\caption{This is a sample image.}
+\end{figure} 
+\newpage
+\subsubsection{Lists}
+You can make lists with automatic bullet points:
+\begin{itemize}
+    \item First item (apple)
+    \item Second item (banana)
+    \item Third item (cherry)
+\end{itemize}
+
+You can also use numbered lists with colored text:
+\begin{enumerate}
+    \item \textcolor{blue}{Blue}
+    \item \textcolor{blue}{More blue}
+    \item \textcolor{red}{And red!}
+    \item \textcolor{green}{This is green color}
+\end{enumerate}
+
+\subsubsection{Hyperlinks}
+
+For more information, visit the LaTeX project website: \href{https://www.latex-project.org/}{LaTeX Project Website}.
+
+\subsubsection{Bibliography}
+
+To include references,use BibTeX. Here is an example citation~\cite{Doe24} \textcolor{blue}{[Doe24]}.
+
+\newpage
+ 
+\section*{ Bibliography}
+~\bibitem{Doe24} [Doe24] John Doe. An example article. Journal of Examples, 1(1):1–2, 2024.
+ 
+\subsection{Question 2}
+\subsection{Question 3}
+\end{document}
